@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <main>
+    <!-- Header -->
+    <header>
+        <navbar class="nav">
+            <div class="left">
+                <a href="#home" class="logo">
+                    <i class="fas fa-code" style="margin-right: 10px; color: #007bff; font-size: 2.2rem;"></i>
+                    <span class="logo-text">My Portfolio<span>
+                </a>
+            </div>
+
+            <div class="right">
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#projects">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills">
+                            <i class="fas fa-cogs"></i>
+                            <span>Skills</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <i class="fas fa-user"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </navbar>
+    </header>
+    
+       <section class="first hero-section">
+    <div class="lefttSection">
+        <div id="name">
+            Hi, My name is <span class="name">Akash Vajpayee</span>
+        </div>
+        <div id="intro">
+            <i class="fas fa-bolt"></i>
+            Full Stack Developer crafting solutions that drive <span>3x</span> user engagement and <span>40% faster</span> performance
+        </div>
+        <div id="intro2">
+            <i class="fas fa-laptop-code"></i>
+            MERN Stack | Open Source | UI/UX Enthusiast
+        </div>
+        <div id="resu">
+            <i class="fas fa-arrow-down"></i>
+            Check out my <span>'CV'</span> and <span>'GitHub'</span> below.
+        </div>
+        <div id="buttons">
+            <button class="btn" onclick="window.location.href='#projects'">
+                <i class="fas fa-file-alt"></i>View CV
+            </button>
+            <button class="btn git-hub" onclick="window.open('https://github.com/', '_blank')">
+                <i class="fab fa-github"></i>GitHub Link
+            </button>
+        </div>
+                <div class= "icons" style="margin-top: 32px; display: flex; gap: 18px;">
+                    <a class="firsttt" href="https://linkedin.com/" target="_blank" style="color: #0077b5; font-size: 1.7rem;"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a class="sec" href="https://github.com/" target="_blank" style="color: #222; font-size: 1.7rem;"><i class="fab fa-github"></i></a>
+                    <a class="third" href="mailto:your@email.com" style="color: #d44638; font-size: 1.7rem;"><i class="fas fa-envelope"></i></a>
+                    <a href="https://twitter.com/" target="_blank" style="color: #1da1f2; font-size: 1.7rem;"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            </div>
+            <div class="righttSection">
+                <img src="bg.jpg" alt="background" class="profile-pic">
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Projects</h2>
+                    <div></div>
+                </div>
+                <div class="project-list">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>A full-featured online store with product management, cart functionality, and secure
+                                payment processing.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe API</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-img">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>A Kanban-style productivity tool with drag-and-drop interface and team collaboration
+                                features.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">WebSockets</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-img">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Financial Dashboard</h3>
+                            <p>Interactive dashboard for financial data visualization with real-time updates and
+                                reporting.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Skills</h2>
+                    <div></div>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-desktop"></i>Frontend</h3>
+                        <div class="skill-item">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt skill-icon"></i>
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js skill-icon"></i>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react skill-icon"></i>
+                            <span class="skill-name">React</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server"></i>Backend</h3>
+                        <div class="skill-item">
+                            <i class="fab fa-node skill-icon"></i>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server skill-icon"></i>
+                            <span class="skill-name">Express</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database skill-icon"></i>
+                            <span class="skill-name">MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database skill-icon"></i>
+                            <span class="skill-name">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i>Tools</h3>
+                        <div class="skill-item">
+                            <i class="fab fa-git skill-icon"></i>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github skill-icon"></i>
+                            <span class="skill-name">GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal skill-icon"></i>
+                            <span class="skill-name">CLI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code skill-icon"></i>
+                            <span class="skill-name">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span>
+                        Always learning new technologies!
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced About Section -->
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <div></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p><i class="fas fa-user-graduate"></i>I'm a <span>passionate Full Stack Developer</span> with
+                            expertise in building robust web applications that deliver exceptional user experiences. My
+                            journey in web development began <span>3 years ago</span>, and I've been hooked ever since.
+                        </p>
+                        <p><i class="fas fa-layer-group"></i>I specialize in the <span>MERN stack</span> (MongoDB,
+                            Express, React, Node.js) but enjoy working with various technologies. My approach combines
+                            technical excellence with creative problem-solving to deliver solutions that are both
+                            functional and elegant.</p>
+                        <p><i class="fas fa-users"></i>Beyond coding, I'm an <span>active contributor</span> to
+                            open-source projects and enjoy mentoring aspiring developers. I believe in <span>continuous
+                                learning</span> and staying updated with industry trends.</p>
+                        <p><i class="fas fa-hiking"></i>When I'm not at my computer, you'll find me <span>hiking</span>,
+                            reading tech blogs, or experimenting with new frameworks and libraries.</p>
+                        <p><i class="fas fa-heart"></i>My goal is to create software that not only meets user needs but
+                            also <span>inspires and empowers</span> them. I thrive on challenges and love turning ideas into reality.</p>
+                    </div>
+                    <div class="about-image">
+                        <div class="abut">
+                            <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80"
+                                alt="Professional developer smiling">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span>
+                        Let's build something amazing together!
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact Me</h2>
+                    <div></div>
+                </div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required rows="5"></textarea>
+                    </div>
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>Send Message
+                    </button>
+                </form>
+                <div>
+                    <span>
+                        I'll get back to you soon!
+                    </span>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>
+                &copy; 2023 <span>Akash Vajpayee</span>. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
